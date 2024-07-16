@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Permanent+Marker&family=Playwrite+AU+SA:wght@100..400&family=Caveat:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+} 
+body{
+    color: white;
+    background-color: #000000;
+}
+header.header{
+    padding: 2% 0% 0% 15%;
+}
+nav.header__menu{
+    display: flex;
+    gap: 80px;
+}
+a.header__menu__link{
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Permanent Marker", cursive;
+    color: blueviolet;
+    font-weight: 300;
+}
+main.presentacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+}
+section.presentacion__contenido{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h1.presentacion__contenido__titulo{
+    background-color: blueviolet;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-size: 24px;
+}
+p.presentacion__contenido__parrafo{
+    font-size: 13px;
+    font-family: "Playwrite AU SA", cursive;
+}
+img{
+    width: 700px;
+    height: 500px;
+}
+footer.footer{
+    padding: 21px;
+    background-color: blueviolet;
+    color: #000000;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Permanent Marker", cursive;
+}

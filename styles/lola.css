@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Permanent+Marker&family=Playwrite+AU+SA:wght@100..400&family=Caveat:wght@400..700&display=swap');
+:root{
+    --color-principal: #000;
+    --color-secundario: #F6F6F6;
+    --color-terceario: #8a2be2;
+    
+    --fuente-permanent-marker: "Permanent Marker", cursive;
+    --fuente-caveat: "Caveat", cursive;
+    --fuente-playwrite: "Playwrite AU SA", cursive;
+    --fuente-indie: "Indie Flower", cursive;
+
+    --font-size-primaria: 24px;
+    --font-size--secundaria: 13px;
+
+    --padding: 21px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header.header{
+    padding: 2% 0% 0% 15%;
+}
+nav.header__menu{
+    display: flex;
+    gap: 80px;
+}
+a.header__menu__link{
+    text-decoration: none;
+    font-size: var(--font-size-primaria);
+    font-family: var(--fuente-permanent-marker);
+    font-weight: 300;
+    color: var(--color-terceario);
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+}
+section.presentacion__contenido__section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h1 ,h2 {
+    background-color: var(--color-terceario);
+    text-align: center;
+    font-family: var(--fuente-permanent-marker);
+    font-size: var(--font-size-primaria);
+}
+p.presentacion__parrafo__1{
+    font-family: var(--fuente-playwrite);
+    font-size: var(--font-size--secundaria);
+    
+}
+main.presentacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+}
+p.presentacion__parrafo__2{
+    font-family: var(--fuente-playwrite);
+    font-size: var(--font-size--secundaria);
+}
+pre.presentacion__pre__1{
+    font-family: var(--fuente-indie);
+    font-size: var(--font-size--secundaria);
+}
+p.presentacion__parrafo__3{
+    font-family: var(--fuente-playwrite);
+    font-size: var(--font-size--secundaria);
+}
+video.presentacion__contenido__video__1{
+    width: 50%;
+}
+p.presentacion__parrafo__4{
+    text-align: right;
+}
+img.presentacion__contenido__imagen__1{
+    width: 50%;
+    padding-left: var(--padding);
+}
+button.boton__mensaje__video{
+    width: 50%;
+    padding: var(--padding);
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    font-family: var(--fuente-caveat);
+    border-radius: 16px;
+    border-color: #8F8195;
+    font-size: var(--font-size-primaria);
+    margin: 0 200px;
+}
+footer.footer{
+    padding: var(--padding);
+    background-color: var(--color-terceario);
+    font-size: var(--font-size-primaria);
+    text-align: center;
+    font-family: var(--fuente-caveat);
+}
+@media (max-width: 700px){
+    .header{
+        padding: 10%;
+    }
+    .header__menu{
+        justify-content: center;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+    }
+}
